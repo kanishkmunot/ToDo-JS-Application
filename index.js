@@ -21,8 +21,8 @@ let todoList = [
     for (let i = 0; i < todoList.length; i++) {
       let {item, dueDate} = todoList[i];
       newHtml += `
-        <span>${item}</span>
-        <span>${dueDate}</span>
+        <span style="margin-top: 19px;  font-size: 20px; margin-right: 30px;font-weight: bold;">${item}</span>
+        <span style="margin-top: 19px;  font-size: 20px; margin-right: 30px;font-weight: bold;">${dueDate}</span>
         <button class='btn-delete' onclick="todoList.splice(${i}, 1);
         displayItems();">Delete</button>
       `;
