@@ -12,12 +12,12 @@ function addTodo() {
   if (todoItem.trim() === '' || todoDate.trim() === '') {
     alert('Please enter both task and date before adding.');
     return;
+  }else{
+    todoList.push({ item: todoItem, dueDate: todoDate });
+    inputElement.value = '';
+    dateElement.value = '';
+    displayItems();
   }
-
-  todoList.push({ item: todoItem, dueDate: todoDate });
-  inputElement.value = '';
-  dateElement.value = '';
-  displayItems();
 }
 
 function displayItems() {
